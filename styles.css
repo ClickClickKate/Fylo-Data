@@ -40,7 +40,7 @@ Global Styles
 body {
   font-family: var(--ff-primary);
   background: url(./images/bg-mobile.png) center/cover no-repeat;
-  color: var(--clr-white);
+  color: var(--clr-paleblue);
   font-size: 14px;
   object-fit: cover;
 }
@@ -132,12 +132,12 @@ data section
   height: 160px;
   border-radius: var(--radius);
   position: relative;
+  padding-top: 25px;
 }
 
 .data-section p {
   letter-spacing: var(--spacing);
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -221,7 +221,12 @@ name
 ===============
 */
 .range {
-  
+  font-size: 12px;
+  display: inline-flex;
+  padding-left: 30px;
+  gap: 180px;
+  padding-top: 10px;
+  font-weight: 600;
 }
 /*
 =============== 
