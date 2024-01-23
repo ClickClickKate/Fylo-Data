@@ -1,0 +1,230 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary gradient*/
+  --clr-primary-1: #ffa399;
+  --clr-primary-2: #ff4d97;
+  /* neutral*/
+  --clr-paleblue: hsl(243, 100%, 93%);
+  --clr-grayblue: hsl(229, 7%, 55%);
+  --clr-darkblue: hsl(228, 56%, 26%);
+  --clr-darkdarkblue: hsl(229, 57%, 11%);
+  --clr-white: #fff;
+  --ff-primary: "Raleway", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 1px;
+  --radius: 10px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: url(./images/bg-mobile.png) center/cover no-repeat;
+  color: var(--clr-white);
+  font-size: 14px;
+  object-fit: cover;
+}
+
+/*
+=============== 
+Overall container - parent to info section
+===============
+*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+=============== 
+Info section container (child overall)
+===============
+*/
+
+.info-section {
+  height: 413px;
+  width: 326px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*
+=============== 
+Flyo box
+===============
+*/
+.fylo-section {
+  width: 326px;
+  height: 201px;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: 100px;
+  background: var(--clr-darkblue);
+}
+
+/*
+=============== 
+Fylo Icon
+===============
+*/
+.fylo-logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+/*
+=============== 
+Icon Container
+===============
+*/
+.icon-container {
+  padding: 0px 30px;
+}
+/*
+=============== 
+Icon
+===============
+*/
+.icon {
+  background: var(--clr-darkdarkblue);
+  padding: 10px;
+  border-radius: var(--radius);
+  height: 48px;
+  width: 48px;
+  object-fit: scale-down;
+  margin-left: 10px;
+}
+/*
+=============== 
+data section
+===============
+*/
+
+.data-section {
+  background: var(--clr-darkblue);
+  width: 326px;
+  height: 160px;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.data-section p {
+  letter-spacing: var(--spacing);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/*
+=============== 
+white amount box
+===============
+*/
+.amount {
+  background: var(--clr-white);
+  width: 179px;
+  height: 72px;
+  border-radius: var(--radius);
+  position: absolute;
+  top: 116px;
+  left: 73.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.amount h1 {
+  color: black;
+  font-size: 40px;
+}
+
+.amount p {
+  color: var(--clr-grayblue);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/*
+=============== 
+Coloured line
+===============
+*/
+.meter {
+  background: var(--clr-darkdarkblue);
+  width: 262px;
+  height: 20px;
+  border-radius: var(--radius);
+  margin: 0 auto;
+}
+/*
+=============== 
+name
+===============
+*/
+.measure {
+  width: 193px;
+  height: 14px;
+  background: linear-gradient(
+    90deg,
+    #ffa399,
+    #ff9894,
+    #ff8d91,
+    #ff8190,
+    #ff7590,
+    #ff6991,
+    #ff5b93,
+    #ff4d97
+  );
+  border-radius: var(--radius);
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.fa-circle {
+  font-size: smaller;
+  display: inline;
+  float: right;
+  line-height: 15px;
+  margin-right: 2px;
+}
+/*
+=============== 
+name
+===============
+*/
+.range {
+  
+}
+/*
+=============== 
+name
+===============
+*/
