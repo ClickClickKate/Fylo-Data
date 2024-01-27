@@ -36,6 +36,8 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 body {
   font-family: var(--ff-primary);
@@ -233,3 +235,64 @@ name
 name
 ===============
 */
+@media screen and (min-width: 992px) {
+  .info-section {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+  }
+  .fylo-section {
+    width: 350px;
+    height: 201px;
+  }
+  .data-section {
+    width: 540px;
+    height: 154px;
+    padding-top: 40px;
+  }
+
+  .data-section p {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .amount:before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    right: 0;
+    border-top: 20px solid white;
+    border-left: 20px solid var(--clr-darkblue);
+    width: 0;
+  }
+  .amount {
+    width: 179px;
+    height: 72px;
+    top: -44px;
+    left: 330px;
+    border-bottom-right-radius: 0px;
+  }
+  .amount p {
+    padding: 0px;
+  }
+  .meter {
+    width: 461px;
+  }
+  .measure {
+    width: 339px;
+  }
+
+  .range {
+    padding-left: 10px;
+    gap: 350px;
+    padding-top: 10px;
+  }
+}
