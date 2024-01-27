@@ -44,7 +44,6 @@ body {
   background: url(./images/bg-mobile.png) center/cover no-repeat;
   color: var(--clr-paleblue);
   font-size: 14px;
-  object-fit: cover;
 }
 
 /*
@@ -236,6 +235,12 @@ name
 ===============
 */
 @media screen and (min-width: 992px) {
+  body {
+    background: url(./images/bg-desktop.png) no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+    background-color: var(--clr-darkdarkblue);
+  }
   .info-section {
     height: auto;
     width: auto;
